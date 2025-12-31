@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>发电机综合监测平台</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-logo">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="brand-text">
+            <div class="brand-cn">华润电力</div>
+            <div class="brand-en">CR POWER</div>
+          </div>
+        </div>
+        <nav class="tabs">
+          <button class="tab active">首页</button>
+          <button class="tab">资产配置</button>
+          <button class="tab">首页配置</button>
+          <button class="tab">告警数据</button>
+          <button class="tab">告警配置</button>
+          <button class="tab">通信配置</button>
+          <button class="tab">实时数据</button>
+          <button class="tab">历史数据</button>
+        </nav>
+        <div class="top-actions">
+          <button class="icon-button">×</button>
+          <button class="icon-button">⌄</button>
+        </div>
+      </header>
+
+      <aside class="sidebar">
+        <div class="sidebar-title">首页</div>
+        <button class="side-item active">首页</button>
+        <button class="side-item">实时数据</button>
+        <button class="side-item">历史数据</button>
+        <button class="side-item">告警数据</button>
+        <button class="side-item">配置管理</button>
+      </aside>
+
+      <main class="main">
+        <section class="hero">
+          <div class="hero-brand">
+            <div class="brand-logo small">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div>
+              <div class="brand-cn">华润电力</div>
+              <div class="brand-en">CR POWER</div>
+            </div>
+          </div>
+          <div class="hero-title">发电机综合监测平台</div>
+          <div class="hero-meta">
+            <span>2025-10-24 15:33:58</span>
+            <span class="expand">⤢</span>
+          </div>
+        </section>
+
+        <section class="layout">
+          <div class="panel column">
+            <div class="panel-tabs">
+              <button class="chip active">机组1</button>
+              <button class="chip">机组2</button>
+            </div>
+            <div class="status-grid">
+              <div class="status-card">
+                <div class="status-title">#1定子局放状态</div>
+                <div class="status-state">异常</div>
+              </div>
+              <div class="status-card">
+                <div class="status-title">#1转子间短路状态</div>
+                <div class="status-state">异常</div>
+              </div>
+              <div class="status-card">
+                <div class="status-title">#1轴电压电流状态</div>
+                <div class="status-state">异常</div>
+              </div>
+              <div class="status-card">
+                <div class="status-title">#1绝缘过热状态</div>
+                <div class="status-state">异常</div>
+              </div>
+            </div>
+
+            <div class="panel-section">
+              <div class="section-header">
+                <span>绝缘过热</span>
+                <span class="expand">⤢</span>
+              </div>
+              <div class="chart">
+                <div class="chart-labels">
+                  <span class="label red">#1红微粒子浓度 7.00 μg/m³</span>
+                  <span class="label yellow">#1亚微粒子浓度</span>
+                </div>
+                <div class="chart-grid"></div>
+                <div class="chart-line"></div>
+                <div class="chart-highlight"></div>
+              </div>
+            </div>
+
+            <div class="panel-section">
+              <div class="section-header">
+                <span>轴电压轴电流</span>
+                <span class="expand">⤢</span>
+              </div>
+              <div class="gauge-grid">
+                <div class="gauge">
+                  <div class="gauge-arc"></div>
+                  <div class="gauge-center">15A</div>
+                  <div class="gauge-value">轴电流有效值: 5 A</div>
+                </div>
+                <div class="gauge">
+                  <div class="gauge-arc"></div>
+                  <div class="gauge-center">60V</div>
+                  <div class="gauge-value">轴电压有效值: 9 V</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel column large">
+            <div class="panel-section">
+              <div class="section-header">
+                <span>局放放电强度</span>
+                <span class="expand">⤢</span>
+              </div>
+              <div class="chart">
+                <div class="chart-labels">
+                  <span class="label red">#1A相强度 5.00 mV</span>
+                  <span class="label green">#1B相强度 5.00 mV</span>
+                  <span class="label orange">#1C相强度 8.00 mV</span>
+                </div>
+                <div class="chart-grid"></div>
+                <div class="chart-line multi"></div>
+                <div class="chart-highlight"></div>
+              </div>
+            </div>
+
+            <div class="panel-section">
+              <div class="section-header">
+                <span>局放放电电压</span>
+                <span class="expand">⤢</span>
+              </div>
+              <div class="chart">
+                <div class="chart-labels">
+                  <span class="label red">#1A相电压 8.00 mV</span>
+                  <span class="label green">#1B相电压 8.00 mV</span>
+                  <span class="label orange">#1C相电压 5.00 mV</span>
+                </div>
+                <div class="chart-grid"></div>
+                <div class="chart-line multi"></div>
+                <div class="chart-highlight"></div>
+              </div>
+            </div>
+
+            <div class="panel-section split">
+              <div class="section-header">
+                <span>匝间短路磁通</span>
+                <span class="expand">⤢</span>
+              </div>
+              <div class="split-body">
+                <div class="dial">
+                  <div class="dial-ring"></div>
+                  <div class="dial-core">
+                    <div class="rotor"></div>
+                  </div>
+                </div>
+                <ul class="rank">
+                  <li><span>当前排名</span><span>：</span></li>
+                  <li>1#励磁A从测: 1</li>
+                  <li>1#励磁A从测: 2</li>
+                  <li>1#励磁A从测: 3</li>
+                  <li>1#励磁A从测: 4</li>
+                  <li>1#励磁A从测: 5</li>
+                  <li>1#励磁A从测: 6</li>
+                  <li>1#励磁A从测: 7</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel column">
+            <div class="panel-section">
+              <div class="section-header">
+                <span>匝间短路峰值电压</span>
+                <span class="expand">⤢</span>
+              </div>
+              <div class="table">
+                <div class="table-header">
+                  <span>参数名称</span>
+                  <span>峰值电压</span>
+                  <span>单位</span>
+                </div>
+                <div class="table-row">
+                  <span>1#电极A从槽峰值3</span>
+                  <span class="green">9.00</span>
+                  <span>V</span>
+                </div>
+              </div>
+              <div class="chart compact">
+                <div class="chart-labels">
+                  <span class="label orange">各槽峰值电压</span>
+                </div>
+                <div class="chart-grid"></div>
+                <div class="chart-line dots"></div>
+              </div>
+              <div class="toast">
+                <div class="toast-title">告警</div>
+                <div class="toast-time">2025-10-24 15:33:54 1#亚微粒子浓度</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
